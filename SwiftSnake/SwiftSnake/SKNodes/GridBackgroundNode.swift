@@ -12,8 +12,8 @@ import SpriteKit
 class GridBackgroundNode: SKNode {
     
     //Since TVs are 16x9...
-    let columns = 16 * 2
-    let rows = 9 * 2
+    private let columns = 16 * 2
+    private let rows = 9 * 2
     
     static func backgroundNode() -> GridBackgroundNode {
         let node = GridBackgroundNode()
