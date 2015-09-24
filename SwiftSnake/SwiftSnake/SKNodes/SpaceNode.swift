@@ -11,12 +11,14 @@ import SpriteKit
 
 class SpaceNode: SKShapeNode {
     
+    //MARK: - Factory
+    
     static func emptyNodeOfSize(nodeSize: CGSize) -> SpaceNode {
         let node = SpaceNode(rectOfSize: nodeSize)
         node.fillColor = .blackColor()
         node.strokeColor = .whiteColor()
         node.lineWidth = 1
-        node.name = NodeType.Space.rawValue
+        node.name = NodeName.Space.rawValue
         
         node.addFood(FoodNode.makeFood())
         return node;

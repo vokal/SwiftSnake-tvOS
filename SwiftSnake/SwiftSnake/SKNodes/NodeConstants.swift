@@ -8,10 +8,16 @@
 
 import Foundation
 
-enum NodeType: String {
+enum NodeName: String {
     case Food,
     Background,
     Space,
     SnakeHead,
     SnakeBody
+}
+
+struct NodeBitmask {
+    static let snakeHead: UInt32 = 0x1 << 0
+    static let snakeBody: UInt32 = 0x1 << 1
+    static let food: UInt32 = 0x1 << 2
 }

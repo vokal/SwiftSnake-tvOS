@@ -10,5 +10,17 @@ import Foundation
 import SpriteKit
 
 class SnakeHeadNode: SKNode {
+    
+    //MARK:- Initialization
+    
+    override init() {
+        super.init()
+        self.name = NodeName.SnakeHead.rawValue
+        self.physicsBody?.categoryBitMask = NodeBitmask.snakeHead
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
 }

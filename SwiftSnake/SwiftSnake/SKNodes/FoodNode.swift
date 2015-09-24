@@ -19,7 +19,8 @@ class FoodNode: SKLabelNode {
     static func makeFood() -> FoodNode {
         let food = FoodNode.randomFood()
         let node = FoodNode(text: food)
-        node.name = NodeType.Food.rawValue
+        node.name = NodeName.Food.rawValue
+        node.physicsBody?.categoryBitMask = NodeBitmask.food
         return node
     }
     

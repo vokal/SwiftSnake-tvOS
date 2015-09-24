@@ -17,7 +17,7 @@ class GridBackgroundNode: SKNode {
     
     static func backgroundNode() -> GridBackgroundNode {
         let node = GridBackgroundNode()
-        node.name = NodeType.Background.rawValue
+        node.name = NodeName.Background.rawValue
         return node
     }
     
@@ -34,6 +34,26 @@ class GridBackgroundNode: SKNode {
                 space.position = CGPointMake(xOrigin, yOrigin)
                 self.addChild(space)
             }
+        }
+    }
+}
+
+//MARK: - SKPhysicsContactDelegate
+
+extension GridBackgroundNode: SKPhysicsContactDelegate {
+    func didBeginContact(contact: SKPhysicsContact) {
+//        guard let firstNode = contact.bodyA.node as? SKSpriteNode,
+//        let secondNode = contact.bodyB.node as? SKSpriteNode else {
+//            assertionFailure("THESE AIN'T NO NODES");
+//            return
+//        }
+        
+        if CollisionHandler.isOuroboros(contact.bodyA, contact.bodyB) {
+            //TODO: Show game over scene
+            print("GAME OVER")
+        } else if CollisionHandler.isEating(contact.bodyA, contact.bodyB) {
+            //TODO: Make snake longer
+            print("OM NOM NOM");
         }
     }
 }

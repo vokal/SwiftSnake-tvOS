@@ -25,6 +25,8 @@ class SnakeGameScene: SKScene {
         let backgroundNode = GridBackgroundNode.backgroundNode()
         backgroundNode.setupGrid(sceneSize)
         scene.addChild(backgroundNode)
+        
+        scene.physicsWorld.contactDelegate = backgroundNode
         return scene
     }
 }

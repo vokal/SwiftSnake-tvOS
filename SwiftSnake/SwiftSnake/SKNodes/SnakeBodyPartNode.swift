@@ -11,4 +11,16 @@ import SpriteKit
 
 class SnakeBodyPartNode: SKNode {
 
+    //MARK:- Initialization
+    
+    override init() {
+        super.init()
+        self.name = NodeName.SnakeBody.rawValue
+        self.physicsBody?.categoryBitMask = NodeBitmask.snakeBody
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
 }
