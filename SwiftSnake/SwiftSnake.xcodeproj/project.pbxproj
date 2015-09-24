@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333620541BB47B3200E4B7D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333620521BB47B3200E4B7D7 /* Main.storyboard */; };
+		335B7AC51BB46B9600C9FE17 /* NodeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B7AC41BB46B9600C9FE17 /* NodeConstants.swift */; };
+		33B7A6EE1BB449FC00CA0C0D /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7A6ED1BB449FC00CA0C0D /* FoodNode.swift */; };
+		33DAA8DA1BB4484100A93D9E /* SnakeHeadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DAA8D91BB4484100A93D9E /* SnakeHeadNode.swift */; };
+		33DAA8DC1BB4485300A93D9E /* SnakeBodyPartNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DAA8DB1BB4485300A93D9E /* SnakeBodyPartNode.swift */; };
 		33DE21C81BB430C7004BD380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21C71BB430C7004BD380 /* AppDelegate.swift */; };
-		33DE21CA1BB430C7004BD380 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DE21C91BB430C7004BD380 /* art.scnassets */; };
-		33DE21CC1BB430C7004BD380 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21CB1BB430C7004BD380 /* GameViewController.swift */; };
-		33DE21CF1BB430C7004BD380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DE21CD1BB430C7004BD380 /* Main.storyboard */; };
 		33DE21D11BB430C7004BD380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DE21D01BB430C7004BD380 /* Assets.xcassets */; };
 		33DE21DC1BB430C7004BD380 /* SwiftSnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21DB1BB430C7004BD380 /* SwiftSnakeTests.swift */; };
+		33DE21EC1BB433A6004BD380 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21E91BB433A6004BD380 /* Snake.swift */; };
+		33DE21EE1BB433D0004BD380 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21ED1BB433D0004BD380 /* GameViewController.swift */; };
+		33DE21F01BB433EF004BD380 /* SnakeGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21EF1BB433EF004BD380 /* SnakeGameScene.swift */; };
+		33DE21F21BB436F2004BD380 /* GridBackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21F11BB436F2004BD380 /* GridBackgroundNode.swift */; };
+		33F2C0A61BB4592000897BC9 /* SpaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2C0A51BB4592000897BC9 /* SpaceNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +33,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		333620531BB47B3200E4B7D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftSnake/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		335B7AC41BB46B9600C9FE17 /* NodeConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeConstants.swift; sourceTree = "<group>"; };
+		33B7A6ED1BB449FC00CA0C0D /* FoodNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNode.swift; sourceTree = "<group>"; };
+		33DAA8D91BB4484100A93D9E /* SnakeHeadNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeHeadNode.swift; sourceTree = "<group>"; };
+		33DAA8DB1BB4485300A93D9E /* SnakeBodyPartNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeBodyPartNode.swift; sourceTree = "<group>"; };
 		33DE21C41BB430C7004BD380 /* SwiftSnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE21C71BB430C7004BD380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33DE21C91BB430C7004BD380 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		33DE21CB1BB430C7004BD380 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		33DE21CE1BB430C7004BD380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33DE21D01BB430C7004BD380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33DE21D21BB430C7004BD380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33DE21D71BB430C7004BD380 /* SwiftSnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSnakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE21DB1BB430C7004BD380 /* SwiftSnakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSnakeTests.swift; sourceTree = "<group>"; };
 		33DE21DD1BB430C7004BD380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DE21E91BB433A6004BD380 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		33DE21ED1BB433D0004BD380 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		33DE21EF1BB433EF004BD380 /* SnakeGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeGameScene.swift; sourceTree = "<group>"; };
+		33DE21F11BB436F2004BD380 /* GridBackgroundNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridBackgroundNode.swift; sourceTree = "<group>"; };
+		33F2C0A51BB4592000897BC9 /* SpaceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				33DE21C71BB430C7004BD380 /* AppDelegate.swift */,
-				33DE21C91BB430C7004BD380 /* art.scnassets */,
-				33DE21CB1BB430C7004BD380 /* GameViewController.swift */,
-				33DE21CD1BB430C7004BD380 /* Main.storyboard */,
+				33DE21E81BB433A6004BD380 /* SKNodes */,
+				33DE21EA1BB433A6004BD380 /* SKScenes */,
+				33DE21EB1BB433A6004BD380 /* ViewControllers */,
+				333620521BB47B3200E4B7D7 /* Main.storyboard */,
 				33DE21D01BB430C7004BD380 /* Assets.xcassets */,
 				33DE21D21BB430C7004BD380 /* Info.plist */,
 			);
@@ -94,6 +109,36 @@
 				33DE21DD1BB430C7004BD380 /* Info.plist */,
 			);
 			path = SwiftSnakeTests;
+			sourceTree = "<group>";
+		};
+		33DE21E81BB433A6004BD380 /* SKNodes */ = {
+			isa = PBXGroup;
+			children = (
+				33DE21F11BB436F2004BD380 /* GridBackgroundNode.swift */,
+				33F2C0A51BB4592000897BC9 /* SpaceNode.swift */,
+				33DE21E91BB433A6004BD380 /* Snake.swift */,
+				33DAA8D91BB4484100A93D9E /* SnakeHeadNode.swift */,
+				33DAA8DB1BB4485300A93D9E /* SnakeBodyPartNode.swift */,
+				33B7A6ED1BB449FC00CA0C0D /* FoodNode.swift */,
+				335B7AC41BB46B9600C9FE17 /* NodeConstants.swift */,
+			);
+			path = SKNodes;
+			sourceTree = "<group>";
+		};
+		33DE21EA1BB433A6004BD380 /* SKScenes */ = {
+			isa = PBXGroup;
+			children = (
+				33DE21EF1BB433EF004BD380 /* SnakeGameScene.swift */,
+			);
+			path = SKScenes;
+			sourceTree = "<group>";
+		};
+		33DE21EB1BB433A6004BD380 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33DE21ED1BB433D0004BD380 /* GameViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33DE21CA1BB430C7004BD380 /* art.scnassets in Resources */,
 				33DE21D11BB430C7004BD380 /* Assets.xcassets in Resources */,
-				33DE21CF1BB430C7004BD380 /* Main.storyboard in Resources */,
+				333620541BB47B3200E4B7D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +240,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33DE21CC1BB430C7004BD380 /* GameViewController.swift in Sources */,
+				33DAA8DA1BB4484100A93D9E /* SnakeHeadNode.swift in Sources */,
+				33DE21EC1BB433A6004BD380 /* Snake.swift in Sources */,
+				33DE21F21BB436F2004BD380 /* GridBackgroundNode.swift in Sources */,
+				33DE21F01BB433EF004BD380 /* SnakeGameScene.swift in Sources */,
+				33DAA8DC1BB4485300A93D9E /* SnakeBodyPartNode.swift in Sources */,
+				33F2C0A61BB4592000897BC9 /* SpaceNode.swift in Sources */,
+				33B7A6EE1BB449FC00CA0C0D /* FoodNode.swift in Sources */,
+				335B7AC51BB46B9600C9FE17 /* NodeConstants.swift in Sources */,
+				33DE21EE1BB433D0004BD380 /* GameViewController.swift in Sources */,
 				33DE21C81BB430C7004BD380 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,12 +272,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		33DE21CD1BB430C7004BD380 /* Main.storyboard */ = {
+		333620521BB47B3200E4B7D7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				33DE21CE1BB430C7004BD380 /* Base */,
+				333620531BB47B3200E4B7D7 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -380,6 +433,7 @@
 				33DE21E21BB430C7004BD380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33DE21E31BB430C7004BD380 /* Build configuration list for PBXNativeTarget "SwiftSnakeTests" */ = {
 			isa = XCConfigurationList;
@@ -388,6 +442,7 @@
 				33DE21E51BB430C7004BD380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
