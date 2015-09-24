@@ -10,5 +10,9 @@ import Foundation
 import SpriteKit
 
 class SnakeGameScene: SKScene {
+    
+    override func didMoveToView(view: SKView) {
+        self.backgroundColor = .redColor()
+    }
 
 }

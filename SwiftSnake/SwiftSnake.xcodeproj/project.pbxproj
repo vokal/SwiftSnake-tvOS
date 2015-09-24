@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		33DE21C81BB430C7004BD380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21C71BB430C7004BD380 /* AppDelegate.swift */; };
-		33DE21CA1BB430C7004BD380 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DE21C91BB430C7004BD380 /* art.scnassets */; };
 		33DE21CF1BB430C7004BD380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DE21CD1BB430C7004BD380 /* Main.storyboard */; };
 		33DE21D11BB430C7004BD380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DE21D01BB430C7004BD380 /* Assets.xcassets */; };
 		33DE21DC1BB430C7004BD380 /* SwiftSnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21DB1BB430C7004BD380 /* SwiftSnakeTests.swift */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		33DE21C41BB430C7004BD380 /* SwiftSnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE21C71BB430C7004BD380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33DE21C91BB430C7004BD380 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		33DE21CE1BB430C7004BD380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33DE21D01BB430C7004BD380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33DE21D21BB430C7004BD380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				33DE21E81BB433A6004BD380 /* SKNodes */,
 				33DE21EA1BB433A6004BD380 /* SKScenes */,
 				33DE21EB1BB433A6004BD380 /* ViewControllers */,
-				33DE21C91BB430C7004BD380 /* art.scnassets */,
 				33DE21CD1BB430C7004BD380 /* Main.storyboard */,
 				33DE21D01BB430C7004BD380 /* Assets.xcassets */,
 				33DE21D21BB430C7004BD380 /* Info.plist */,
@@ -209,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33DE21CA1BB430C7004BD380 /* art.scnassets in Resources */,
 				33DE21D11BB430C7004BD380 /* Assets.xcassets in Resources */,
 				33DE21CF1BB430C7004BD380 /* Main.storyboard in Resources */,
 			);
@@ -416,6 +412,7 @@
 				33DE21E21BB430C7004BD380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33DE21E31BB430C7004BD380 /* Build configuration list for PBXNativeTarget "SwiftSnakeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +421,7 @@
 				33DE21E51BB430C7004BD380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
