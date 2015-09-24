@@ -9,14 +9,18 @@
 import Foundation
 import SpriteKit
 
-class SpaceNode: SKSpriteNode {
+class SpaceNode: SKShapeNode {
     
-    static func emptyNode() -> SpaceNode {
-        let node = SpaceNode(imageNamed: "cupcake")
+    static func emptyNodeOfSize(nodeSize: CGSize) -> SpaceNode {
+        let node = SpaceNode(rectOfSize: nodeSize)
+        node.fillColor = .blackColor()
+        node.strokeColor = .whiteColor()
+        node.lineWidth = 1
         node.name = NodeType.Space.rawValue
+        
+        node.addFood(FoodNode.makeFood())
         return node;
     }
-    
     
     func addFood(food: FoodNode) {
         food.position = CGPointMake(0, 0)
