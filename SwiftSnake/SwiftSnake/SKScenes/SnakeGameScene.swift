@@ -22,7 +22,7 @@ class SnakeGameScene: SKScene {
         let scene = SnakeGameScene(size: sceneSize)
         scene.backgroundColor = .redColor()
         
-        let backgroundNode = GridBackgroundNode.backgroundNode()
+        let backgroundNode = GridBackgroundNode()
         backgroundNode.setupGrid(sceneSize)
         scene.addChild(backgroundNode)
         

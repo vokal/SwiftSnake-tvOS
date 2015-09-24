@@ -15,11 +15,18 @@ class GridBackgroundNode: SKNode {
     private let columns = 16 * 2
     private let rows = 9 * 2
     
-    static func backgroundNode() -> GridBackgroundNode {
-        let node = GridBackgroundNode()
-        node.name = NodeName.Background.rawValue
-        return node
+    //MARK: - Init
+    
+    override init() {
+        super.init()
+        self.name = NodeName.Background.rawValue
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    //MARK: - Setup
     
     func setupGrid(gridSize: CGSize) {
         let xWidth = gridSize.width / CGFloat(columns)
