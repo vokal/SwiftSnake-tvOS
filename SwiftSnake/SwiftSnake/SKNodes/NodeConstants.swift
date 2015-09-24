@@ -9,9 +9,9 @@
 import Foundation
 
 enum NodeType: String {
-    case Food = "Food",
-    Background = "Background",
-    Space = "Space",
-    SnakeHead = "SnakeHead",
-    SnakeBody = "SnakeBody"
+    case Food,
+    Background,
+    Space,
+    SnakeHead,
+    SnakeBody
 }
