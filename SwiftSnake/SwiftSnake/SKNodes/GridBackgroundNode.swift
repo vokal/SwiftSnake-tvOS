@@ -22,19 +22,18 @@ class GridBackgroundNode: SKNode {
     }
     
     func setupGrid(gridSize: CGSize) {
-        
         let xWidth = (gridSize.width / CGFloat(columns)) as CGFloat
         let yHeight = (gridSize.height / CGFloat(rows)) as CGFloat
+        let nodeSize = CGSize(width: xWidth, height: yHeight)
         
         for column in 0..<columns {
             let xOrigin = xWidth * CGFloat(column) + xWidth / 2
             for row in 0..<rows {
                 let yOrigin = yHeight * CGFloat(row) + yHeight / 2
-                let space = SpaceNode.emptyNodeOfSize(CGSize(width: xWidth, height: yHeight))
+                let space = SpaceNode.emptyNodeOfSize(nodeSize)
                 space.position = CGPointMake(xOrigin, yOrigin)
                 self.addChild(space)
             }
-        }
-    
+        }    
     }
 }
