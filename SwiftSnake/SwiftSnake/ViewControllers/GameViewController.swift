@@ -18,11 +18,14 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         guard let skView = self.view as? SKView else {
+            assertionFailure("DERP")
             return;
         }
         
+        print("FRAME: \(skView.frame)")
+        
         // create a new scene
-        let scene = SnakeGameScene()
+        let scene = SnakeGameScene.makeSceneOfSize(skView.frame.size)
         skView.presentScene(scene)
         
         // add a tap gesture recognizer

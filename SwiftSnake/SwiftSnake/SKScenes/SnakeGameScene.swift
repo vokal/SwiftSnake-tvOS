@@ -11,8 +11,13 @@ import SpriteKit
 
 class SnakeGameScene: SKScene {
     
-    override func didMoveToView(view: SKView) {
-        self.backgroundColor = .redColor()
+    static func makeSceneOfSize(sceneSize: CGSize) -> SnakeGameScene {
+        let scene = SnakeGameScene(size: sceneSize)
+        scene.backgroundColor = .redColor()
+        
+        let backgroundNode = GridBackgroundNode.backgroundNode()
+        backgroundNode.setupGrid()
+        scene.addChild(backgroundNode)
+        return scene
     }
-
 }
