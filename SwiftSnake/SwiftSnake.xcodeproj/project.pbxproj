@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3326FFCC1BB4C9D8004A705E /* GridStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3326FFCB1BB4C9D8004A705E /* GridStorage.swift */; };
-		332BA4E31BB4ADDC007EBBBA /* CollisionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332BA4E21BB4ADDC007EBBBA /* CollisionHandler.swift */; };
 		333620541BB47B3200E4B7D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333620521BB47B3200E4B7D7 /* Main.storyboard */; };
+		33423A4E1BB58BF600BC60F8 /* CollisionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33423A4B1BB58BF600BC60F8 /* CollisionHandler.swift */; };
+		33423A4F1BB58BF600BC60F8 /* GridStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33423A4C1BB58BF600BC60F8 /* GridStorage.swift */; };
+		33423A501BB58BF600BC60F8 /* PieceToDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33423A4D1BB58BF600BC60F8 /* PieceToDisplay.swift */; };
 		335B7AC51BB46B9600C9FE17 /* NodeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B7AC41BB46B9600C9FE17 /* NodeConstants.swift */; };
 		33B7A6EE1BB449FC00CA0C0D /* FoodNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7A6ED1BB449FC00CA0C0D /* FoodNode.swift */; };
 		33DAA8DA1BB4484100A93D9E /* SnakeHeadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DAA8D91BB4484100A93D9E /* SnakeHeadNode.swift */; };
@@ -21,7 +22,6 @@
 		33DE21EE1BB433D0004BD380 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21ED1BB433D0004BD380 /* GameViewController.swift */; };
 		33DE21F01BB433EF004BD380 /* SnakeGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21EF1BB433EF004BD380 /* SnakeGameScene.swift */; };
 		33DE21F21BB436F2004BD380 /* GridBackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE21F11BB436F2004BD380 /* GridBackgroundNode.swift */; };
-		33E1268E1BB4D328000843B9 /* PieceToDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E1268D1BB4D328000843B9 /* PieceToDisplay.swift */; };
 		33F2C0A61BB4592000897BC9 /* SpaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2C0A51BB4592000897BC9 /* SpaceNode.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3326FFCB1BB4C9D8004A705E /* GridStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridStorage.swift; sourceTree = "<group>"; };
-		332BA4E21BB4ADDC007EBBBA /* CollisionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionHandler.swift; sourceTree = "<group>"; };
 		333620531BB47B3200E4B7D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftSnake/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33423A4B1BB58BF600BC60F8 /* CollisionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionHandler.swift; sourceTree = "<group>"; };
+		33423A4C1BB58BF600BC60F8 /* GridStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridStorage.swift; sourceTree = "<group>"; };
+		33423A4D1BB58BF600BC60F8 /* PieceToDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceToDisplay.swift; sourceTree = "<group>"; };
 		335B7AC41BB46B9600C9FE17 /* NodeConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeConstants.swift; sourceTree = "<group>"; };
 		33B7A6ED1BB449FC00CA0C0D /* FoodNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNode.swift; sourceTree = "<group>"; };
 		33DAA8D91BB4484100A93D9E /* SnakeHeadNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeHeadNode.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		33DE21ED1BB433D0004BD380 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		33DE21EF1BB433EF004BD380 /* SnakeGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeGameScene.swift; sourceTree = "<group>"; };
 		33DE21F11BB436F2004BD380 /* GridBackgroundNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridBackgroundNode.swift; sourceTree = "<group>"; };
-		33E1268D1BB4D328000843B9 /* PieceToDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceToDisplay.swift; sourceTree = "<group>"; };
 		33F2C0A51BB4592000897BC9 /* SpaceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,15 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		332BA4E11BB4ADDC007EBBBA /* GameLogicControllers */ = {
+		33423A4A1BB58BF600BC60F8 /* GameLogicControllers */ = {
 			isa = PBXGroup;
 			children = (
-				332BA4E21BB4ADDC007EBBBA /* CollisionHandler.swift */,
-				3326FFCB1BB4C9D8004A705E /* GridStorage.swift */,
-				33E1268D1BB4D328000843B9 /* PieceToDisplay.swift */,
+				33423A4B1BB58BF600BC60F8 /* CollisionHandler.swift */,
+				33423A4C1BB58BF600BC60F8 /* GridStorage.swift */,
+				33423A4D1BB58BF600BC60F8 /* PieceToDisplay.swift */,
 			);
-			name = GameLogicControllers;
-			path = Extensions/GameLogicControllers;
+			path = GameLogicControllers;
 			sourceTree = "<group>";
 		};
 		33DE21BB1BB430C7004BD380 = {
@@ -109,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				33DE21C71BB430C7004BD380 /* AppDelegate.swift */,
-				332BA4E11BB4ADDC007EBBBA /* GameLogicControllers */,
+				33423A4A1BB58BF600BC60F8 /* GameLogicControllers */,
 				33DE21E81BB433A6004BD380 /* SKNodes */,
 				33DE21EA1BB433A6004BD380 /* SKScenes */,
 				33DE21EB1BB433A6004BD380 /* ViewControllers */,
@@ -258,18 +257,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332BA4E31BB4ADDC007EBBBA /* CollisionHandler.swift in Sources */,
+				33423A4E1BB58BF600BC60F8 /* CollisionHandler.swift in Sources */,
 				33DAA8DA1BB4484100A93D9E /* SnakeHeadNode.swift in Sources */,
 				33DE21EC1BB433A6004BD380 /* Snake.swift in Sources */,
-				3326FFCC1BB4C9D8004A705E /* GridStorage.swift in Sources */,
 				33DE21F21BB436F2004BD380 /* GridBackgroundNode.swift in Sources */,
+				33423A4F1BB58BF600BC60F8 /* GridStorage.swift in Sources */,
 				33DE21F01BB433EF004BD380 /* SnakeGameScene.swift in Sources */,
 				33DAA8DC1BB4485300A93D9E /* SnakeBodyPartNode.swift in Sources */,
-				33E1268E1BB4D328000843B9 /* PieceToDisplay.swift in Sources */,
 				33F2C0A61BB4592000897BC9 /* SpaceNode.swift in Sources */,
 				33B7A6EE1BB449FC00CA0C0D /* FoodNode.swift in Sources */,
 				335B7AC51BB46B9600C9FE17 /* NodeConstants.swift in Sources */,
 				33DE21EE1BB433D0004BD380 /* GameViewController.swift in Sources */,
+				33423A501BB58BF600BC60F8 /* PieceToDisplay.swift in Sources */,
 				33DE21C81BB430C7004BD380 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
