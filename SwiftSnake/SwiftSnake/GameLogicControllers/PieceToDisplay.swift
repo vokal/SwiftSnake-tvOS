@@ -9,7 +9,8 @@
 import Foundation
 
 enum PieceToDisplay {
-    case SnakeHead,
+    case
+    SnakeHead,
     SnakeBody,
     Food
 }

@@ -9,7 +9,8 @@
 import Foundation
 
 enum NodeName: String {
-    case Food,
+    case
+    Food,
     Background,
     Space,
     SnakeHead,
