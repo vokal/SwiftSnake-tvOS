@@ -15,14 +15,26 @@ class GridBackgroundNode: SKNode {
     private let columns = 16 * 2
     private let rows = 9 * 2
     
+    let backingStore: GridStorage<PieceToDisplay>
+    
     //MARK: - Init
     
     override init() {
+        self.backingStore = GridStorage(columns: columns, rows: rows)
         super.init()
         self.name = NodeName.Background.rawValue
     }
     
     required init?(coder aDecoder: NSCoder) {
+        assertionFailure("Don't use a coder, use init!")
+        
+        /*
+            I would return nil here, but the compiler whines when I do:
+            "All stored properties of a class instance must be initialized
+            before returning nil from an initializer" - Wait, what? OK, 
+            fine, be that way. I'll just return the damned object then.
+        */
+        self.backingStore = GridStorage(columns: columns, rows: rows)
         super.init(coder: aDecoder)
     }
     
