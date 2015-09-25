@@ -20,7 +20,7 @@ class FoodNode: SKLabelNode {
         let food = FoodNode.randomFood()
         let node = FoodNode(text: food)
         node.name = NodeName.Food.rawValue
-        node.physicsBody?.categoryBitMask = NodeBitmask.food
+        node.physicsBody?.categoryBitMask = NodeBitmask.Food.rawValue
         return node
     }
     

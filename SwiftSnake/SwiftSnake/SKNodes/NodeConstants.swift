@@ -17,8 +17,9 @@ enum NodeName: String {
     SnakeBody
 }
 
-struct NodeBitmask {
-    static let snakeHead: UInt32 = 0x1 << 0
-    static let snakeBody: UInt32 = 0x1 << 1
-    static let food: UInt32 = 0x1 << 2
+struct NodeBitmask: OptionSetType {
+    let rawValue: UInt32
+    static let SnakeHead = NodeBitmask(rawValue: 0x1 << 0)
+    static let SnakeBody = NodeBitmask(rawValue: 0x1 << 1)
+    static let Food = NodeBitmask(rawValue: 0x1 << 2)
 }

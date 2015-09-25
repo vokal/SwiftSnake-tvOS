@@ -28,7 +28,7 @@ class SnakeBodyPartNode: SKSpriteNode {
         let node = SnakeBodyPartNode(imageNamed: bodyPart.rawValue)
         node.name = NodeName.SnakeBody.rawValue
         node.bodyPart = bodyPart
-        node.physicsBody?.categoryBitMask = NodeBitmask.snakeBody
+        node.physicsBody?.categoryBitMask = NodeBitmask.SnakeBody.rawValue
 
         return node;
     }

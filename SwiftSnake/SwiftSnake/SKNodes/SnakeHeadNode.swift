@@ -23,7 +23,7 @@ class SnakeHeadNode: SKSpriteNode {
     static func withDirection(direction: SnakeHeadDirection) -> SnakeHeadNode {
         let node = SnakeHeadNode(imageNamed: direction.rawValue)
         node.name = NodeName.SnakeHead.rawValue
-        node.physicsBody?.categoryBitMask = NodeBitmask.snakeHead
+        node.physicsBody?.categoryBitMask = NodeBitmask.SnakeHead.rawValue
         return node        
     }
 
