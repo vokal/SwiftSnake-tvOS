@@ -15,11 +15,11 @@ class SwiftSnakeTests: XCTestCase {
     
     func testCollisionDetection() {    
         let snakeHead = SKPhysicsBody()
-        snakeHead.categoryBitMask = NodeBitmask.snakeHead
+        snakeHead.categoryBitMask = NodeBitmask.SnakeHead.rawValue
         let snakeBody = SKPhysicsBody()
-        snakeBody.categoryBitMask = NodeBitmask.snakeBody
+        snakeBody.categoryBitMask = NodeBitmask.SnakeBody.rawValue
         let food = SKPhysicsBody()
-        food.categoryBitMask = NodeBitmask.food
+        food.categoryBitMask = NodeBitmask.Food.rawValue
         
         //Ouroboros case
         XCTAssertTrue(CollisionHandler.isOuroboros(snakeHead, snakeBody))

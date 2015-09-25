@@ -33,14 +33,15 @@ struct CollisionHandler {
     - returns: true if the snake head has run into the snake tail. false if not.
     */
     static func isOuroboros(firstBody: SKPhysicsBody, _ secondBody: SKPhysicsBody) -> Bool {
-        if isSnakeHead(firstBody) {
-            return isSnakeBody(secondBody)
-        } else if isSnakeBody(firstBody) {
-            return isSnakeHead(secondBody)
+        switch (firstBody.categoryBitMask, secondBody.categoryBitMask) {
+        case (NodeBitmask.SnakeHead.rawValue, NodeBitmask.SnakeBody.rawValue):
+            fallthrough
+        case (NodeBitmask.SnakeBody.rawValue, NodeBitmask.SnakeHead.rawValue):
+            return true
+        default:
+            return false
+            
         }
-        
-        //Default case
-        return false
     }
     
     /**
@@ -49,13 +50,13 @@ struct CollisionHandler {
      - returns: true if the snake head has run into a piece of food. false if not.
      */
     static func isEating(firstBody: SKPhysicsBody, _ secondBody: SKPhysicsBody) -> Bool {
-        if isFood(firstBody) {
-            return isSnakeHead(secondBody)
-        } else if isSnakeHead(firstBody) {
-            return isFood(secondBody)
+        switch (firstBody.categoryBitMask, secondBody.categoryBitMask) {
+        case (NodeBitmask.SnakeHead.rawValue, NodeBitmask.Food.rawValue):
+            fallthrough
+        case (NodeBitmask.Food.rawValue, NodeBitmask.SnakeHead.rawValue):
+            return true
+        default:
+            return false
         }
-        
-        //Default case.
-        return false
     }
 }
