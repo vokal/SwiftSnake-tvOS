@@ -9,6 +9,22 @@
 import Foundation
 import SpriteKit
 
-class SnakeHeadNode: SKNode {
+enum SnakeHeadDirection: String {
+    case Up = "SnakeHeadUp",
+    Down = "SnakeHeadDown",
+    Right = "SnakeHeadRight",
+    Left = "SnakeHeadLeft"
+}
+
+class SnakeHeadNode: SKSpriteNode {
+    
+    //MARK:- Factory
+    
+    static func withDirection(direction: SnakeHeadDirection) -> SnakeHeadNode {
+        let node = SnakeHeadNode(imageNamed: direction.rawValue)
+        node.name = NodeName.SnakeHead.rawValue
+        node.physicsBody?.categoryBitMask = NodeBitmask.SnakeHead.rawValue
+        return node        
+    }
 
 }
