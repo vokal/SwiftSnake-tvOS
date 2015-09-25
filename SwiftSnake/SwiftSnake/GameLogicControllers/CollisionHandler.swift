@@ -11,20 +11,6 @@ import SpriteKit
 
 struct CollisionHandler {
     
-    //MARK: - Convenience wrappers around category bitmask comparison
-    
-    private static func isFood(body: SKPhysicsBody) -> Bool {
-        return body.categoryBitMask == NodeBitmask.Food.rawValue
-    }
-    
-    private static func isSnakeHead(body: SKPhysicsBody) -> Bool {
-        return body.categoryBitMask == NodeBitmask.SnakeHead.rawValue
-    }
-    
-    private static func isSnakeBody(body: SKPhysicsBody) -> Bool {
-        return body.categoryBitMask == NodeBitmask.SnakeBody.rawValue
-    }
-    
     //MARK: - Major collision detectors
     
     /**
