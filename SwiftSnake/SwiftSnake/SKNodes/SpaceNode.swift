@@ -19,13 +19,6 @@ class SpaceNode: SKShapeNode {
         node.strokeColor = .whiteColor()
         node.lineWidth = 1
         node.name = NodeName.Space.rawValue
-        
-        node.addFood(FoodNode.makeFood())
         return node;
-    }
-    
-    func addFood(food: FoodNode) {
-        food.position = CGPointMake(0, 0)
-        self.addChild(food)
     }
 }
