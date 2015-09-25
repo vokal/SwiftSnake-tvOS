@@ -3,6 +3,7 @@
     {
       "orientation" : "landscape",
       "idiom" : "tv",
+      "filename" : "snake_full_3.png",
       "extent" : "full-screen",
       "minimum-system-version" : "9.0",
       "scale" : "1x"
