@@ -9,18 +9,27 @@
 import Foundation
 import SpriteKit
 
-class SnakeBodyPartNode: SKNode {
+enum SnakeBodyPart: String {
+    case Horizontal = "SnakeBodyHorizontal",
+    Vertical = "SnakeBodyVertical",
+    LeftUpBend,
+    LeftDownBend,
+    RightUpBend,
+    RightDownBend
+}
 
-    //MARK:- Initialization
+class SnakeBodyPartNode: SKSpriteNode {
     
-    override init() {
-        super.init()
-        self.name = NodeName.SnakeBody.rawValue
-        self.physicsBody?.categoryBitMask = NodeBitmask.snakeBody
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+    var bodyPart: SnakeBodyPart?
 
+    //MARK:- Factory
+    
+    static func withPart(bodyPart: SnakeBodyPart) -> SnakeBodyPartNode {
+        let node = SnakeBodyPartNode(imageNamed: bodyPart.rawValue)
+        node.name = NodeName.SnakeBody.rawValue
+        node.bodyPart = bodyPart
+        node.physicsBody?.categoryBitMask = NodeBitmask.snakeBody
+
+        return node;
+    }
 }

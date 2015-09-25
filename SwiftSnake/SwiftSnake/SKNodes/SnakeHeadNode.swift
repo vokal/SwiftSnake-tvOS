@@ -9,18 +9,22 @@
 import Foundation
 import SpriteKit
 
-class SnakeHeadNode: SKNode {
+enum SnakeHeadDirection: String {
+    case Up = "SnakeHeadUp",
+    Down = "SnakeHeadDown",
+    Right = "SnakeHeadRight",
+    Left = "SnakeHeadLeft"
+}
+
+class SnakeHeadNode: SKSpriteNode {
     
-    //MARK:- Initialization
+    //MARK:- Factory
     
-    override init() {
-        super.init()
-        self.name = NodeName.SnakeHead.rawValue
-        self.physicsBody?.categoryBitMask = NodeBitmask.snakeHead
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    static func withDirection(direction: SnakeHeadDirection) -> SnakeHeadNode {
+        let node = SnakeHeadNode(imageNamed: direction.rawValue)
+        node.name = NodeName.SnakeHead.rawValue
+        node.physicsBody?.categoryBitMask = NodeBitmask.snakeHead
+        return node        
     }
 
 }
